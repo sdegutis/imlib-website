@@ -1,5 +1,3 @@
-import { Em } from "./em.js";
-
 function Html(attrs: any, children: any) {
   return <>
     {`<!doctype html>`}
@@ -14,9 +12,18 @@ function Html(attrs: any, children: any) {
 
 export default <Html>
   <link rel='stylesheet' href='style.css' />
-  <script type='module' src='client.js' />
-  <p>Hello from the <Em>SSG</Em>.</p>
-  <div id='root' />
+  <p>Docs and better site coming soon.</p>
+  <ul>
+    <li>Very simple TypeScript SSG</li>
+    <li>Custom JSX implementation (can return DOM nodes, strings, etc)</li>
+    <li>Extremely fast and efficient (processes 1500+ files in ~700ms)</li>
+  </ul>
+  <ul>
+    <li><a href='https://github.com/sdegutis/imlib-template-minimal'>Template repo</a></li>
+    <li><a href='https://sdegutis.github.io/imlib-template/'>Live demo</a></li>
+    <li><a href='https://github.com/sdegutis/imlib-template/tree/main/site'>Live demo's source code</a></li>
+    <li><a href='https://github.com/sdegutis/immaculatalibrary.com/tree/main/site'>Comprehensive usage example</a></li>
+  </ul>
 </Html>;
 
 // <h3>Structure</h3>

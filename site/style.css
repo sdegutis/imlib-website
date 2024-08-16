@@ -1,9 +1,20 @@
-html {
-  background: #222;
-  color: #ccc;
+body {
+  background-color: #22272e;
+  color: #c5d1de;
+  font-family: system-ui;
 }
 
-.em {
-  font-style: italic;
-  color: #fff;
+#root {
+  max-width: 50em;
+  margin: 3em auto 30em;
+}
+
+a {
+  color: #478be6;
+  text-underline-offset: 3px;
+  transition: text-underline-offset 200ms ease-in-out;
+}
+
+a:hover {
+  text-underline-offset: 5px;
 }

@@ -20,9 +20,17 @@ export default <Html>
   </ul>
   <ul>
     <li><a href='https://github.com/sdegutis/imlib-template-minimal'>Template repo</a></li>
-    <li><a href='https://sdegutis.github.io/imlib-template/'>Live demo</a></li>
-    <li><a href='https://github.com/sdegutis/imlib-template/tree/main/site'>Live demo's source code</a></li>
-    <li><a href='https://github.com/sdegutis/immaculatalibrary.com/tree/main/site'>Comprehensive usage example</a></li>
+  </ul>
+  <h3>Actual Demos</h3>
+  <ul>
+    <li><a href='https://minigamemaker.com/'>minigamemaker.com</a> (<a href="https://github.com/sdegutis/mini-game-ide">source</a>)</li>
+    <li><a href='https://immaculatalibrary.com/'>immaculatalibrary.com</a> (<a href="https://github.com/sdegutis/immaculatalibrary.com">source</a>)</li>
+    <li><a href='https://www.samanimate.com/'>samanimate.com</a> (<a href="https://github.com/sdegutis/samanimate">source</a>)</li>
+  </ul>
+  <h3>Traditional Demos</h3>
+  <ul>
+    <li><a href='https://sdegutis.github.io/imlib-template/'>todo list</a> (<a href="https://github.com/sdegutis/imlib-template">source</a>)</li>
+    <li><a href='https://sdegutis.github.io/'>blog</a> (<a href="https://github.com/sdegutis/sdegutis.github.io">source</a>)</li>
   </ul>
 </Html>;
 

@@ -11,6 +11,7 @@
       "@imlib/core/runtime.d.ts"
     ],
     "strict": true,
+    "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,

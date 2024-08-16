@@ -2,22 +2,12 @@ import { Page } from "./page.js";
 
 export default <Page which="About">
   <link rel='stylesheet' href='style.css' />
+  <h3>imlib</h3>
   <p>Docs and better site coming soon.</p>
   <ul>
     <li>Very simple TypeScript SSG</li>
     <li>Custom JSX implementation (can return DOM nodes, strings, etc)</li>
     <li>Extremely fast and efficient (processes 1500+ files in ~700ms)</li>
-  </ul>
-  <h3>Actual Demos</h3>
-  <ul>
-    <li><a href='https://minigamemaker.com/'>minigamemaker.com</a> (<a href="https://github.com/sdegutis/mini-game-ide">source</a>)</li>
-    <li><a href='https://immaculatalibrary.com/'>immaculatalibrary.com</a> (<a href="https://github.com/sdegutis/immaculatalibrary.com">source</a>)</li>
-    <li><a href='https://www.samanimate.com/'>samanimate.com</a> (<a href="https://github.com/sdegutis/samanimate">source</a>)</li>
-  </ul>
-  <h3>Traditional Demos</h3>
-  <ul>
-    <li><a href='https://sdegutis.github.io/imlib-template/'>todo list</a> (<a href="https://github.com/sdegutis/imlib-template">source</a>)</li>
-    <li><a href='https://sdegutis.github.io/'>blog</a> (<a href="https://github.com/sdegutis/sdegutis.github.io">source</a>)</li>
   </ul>
 </Page>;
 

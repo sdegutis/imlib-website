@@ -1,8 +1,8 @@
+(Docs will be improved on an as-needed basis.)
+
 1. **Structure:**
    All files under `site` are processed and turned into the website.  
    Only files that match the patterns below have any special processing.  
-   Files under `/admin/` are only visible in `imlib dev` (for site self-editing).  
-   Files ending with `.d.ts` is skipped, so you can ducktype CDN imports.  
    All other files are left as-is in the site.
 
 2. **Dynamic single-files:**
@@ -17,7 +17,7 @@
    Its default export should be an array of `[filename, exported]`.  
    For each pair, the `[*]` filename portion is replaced with the first element.  
    The second element becomes the file's contents, in the same way as above.  
-   Example: `[article].html.tsx` containing `export default ['hello-world', <b>hello world</b>];`  
+   Example: `[article].html.tsx` containing `export default [['hello-world', <b>hello world</b>]];`  
    This will produce `hello-world.html` containing `<b>hello world</b>`.
 
 4. **Importing directories**:
@@ -26,15 +26,15 @@
    This allows processing and transforming basically any data in any way.
 
 5. **Browser-side scripts:**
-   TS/TSX files that don't start with `_` are transformed into `.js` for the browser.  
+   TS/TSX files are emitted as visible output files ending in `.js` for the browser.  
    This allows browser-side scripts to be conveniently written in JSX and TypeScript.  
-   Note that these are compiled using ESM, so they must be imported/src'd as modules.  
+   Note that these are compiled as ESM, so they must be imported/src'd as modules.  
    JSX in these files are able to attach event handlers directly to the attributes.
 
 6. **Shared-side modules:**
    Technically, browser-side scripts can *also* be imported on the SSG side.  
    The caveat is that they have different JSX semantics, and can't access Node modules.  
-   In practice, this is useful for shared helpers, shared types, and non-dynamic JSX components.
+   But it's still useful for shared helpers, shared types, and non-dynamic JSX components.
 
 7. **Custom JSX implementations:**
    By default, imlib sites will render JSX as strings on the ssg side and DOM nodes in the browser.  

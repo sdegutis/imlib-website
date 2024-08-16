@@ -16,7 +16,9 @@ export function Page(attrs: { which: keyof typeof pages }, children: any) {
             </li>)}
           </ul>
         </nav>
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   </>;

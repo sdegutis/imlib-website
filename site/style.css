@@ -19,6 +19,25 @@ a {
   transition: text-underline-offset 200ms ease-in-out;
 }
 
+body {
+  max-width: 60em;
+  margin: 3em auto;
+  display: flex;
+}
+
+body>nav {
+  flex: 0 0 12em;
+}
+
+body>nav ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body>main {
+  flex: 1 0 auto;
+}
+
 a:hover {
   text-underline-offset: 5px;
 }

@@ -6,9 +6,12 @@ const pages = {
 
 export function Page(attrs: { which: keyof typeof pages }, children: any) {
   return <>
-    {`<!doctype html>`}
-    <html>
+    {`<!DOCTYPE html>`}
+    <html lang="en">
       <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>imlib</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
       </head>
       <body>
